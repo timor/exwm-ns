@@ -4,6 +4,9 @@
 
 ;;; Globals:
 
+;; #+BEGIN_SRC emacs-lisp
+(require 'dbus)
+;; #+END_SRC
 ;; ** D-Bus-Specific
 
 ;; We need to keep track of the registered D-Bus Method to be able to
