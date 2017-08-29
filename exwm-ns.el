@@ -22,7 +22,7 @@
 (defvar exwm-ns-dbus-interface "org.freedesktop.Notifications")
 (defvar exwm-ns-server-version "0.1")
 ;; #+END_SRC
-
+;;; Implementation:
 ;; ** D-Bus registration
 
 ;; #+BEGIN_SRC emacs-lisp
@@ -46,7 +46,7 @@
 	 )))
 ;; #+END_SRC
 
-;;; D:-Bus event handlers
+;; ** D-Bus event handlers
 ;; Main notification handler.  Outputs minimal event information as emacs message.
 ;; #+BEGIN_SRC emacs-lisp
 (defun exwm-ns-handle-notify (app-name replaces-id app-icon summary body actions hints expire-timeout)
@@ -59,7 +59,7 @@
 	"1.2"))
 ;; #+END_SRC
 
-;;; Starting and Stopping
+;; ** Starting and stopping
 ;; #+BEGIN_SRC emacs-lisp
 (defun exwm-ns-init ()
   (exwm-ns-register-service)
