@@ -41,7 +41,7 @@
 	 (exwm-ns-register-method "GetCapabilities" (lambda () '("body")))
 	 (exwm-ns-register-method "Notify" 'exwm-ns-handle-notify)
 	 (exwm-ns-register-method "CloseNotification" (lambda (id)
-							(dbus-send-signal :session exwm-ns-dbus-service exwm-ns-dbus-path exwm-ns-dbus-inferface "NotificationClosed" id 3)))
+							(dbus-send-signal :session exwm-ns-dbus-service exwm-ns-dbus-path exwm-ns-dbus-interface "NotificationClosed" id 3)))
 	 (exwm-ns-register-method "GetServerInformation" 'exwm-ns-handle-get-server-information)
 	 )))
 ;; #+END_SRC
