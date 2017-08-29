@@ -50,7 +50,7 @@
 ;; Main notification handler.  Outputs minimal event information as emacs message.
 ;; #+BEGIN_SRC emacs-lisp
 (defun exwm-ns-handle-notify (app-name replaces-id app-icon summary body actions hints expire-timeout)
-  (message "(%s) %s %s" app-name summary body))
+  (display-message-or-buffer (format "(%s) %s %s" app-name summary body)))
 
 (defun exwm-ns-handle-get-server-information ()
   (list "emacs exwm notification server"
