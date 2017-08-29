@@ -59,7 +59,7 @@
 	"1.2"))
 ;; #+END_SRC
 
-;;; Starting: and Stopping
+;;; Starting and Stopping
 ;; #+BEGIN_SRC emacs-lisp
 (defun exwm-ns-init ()
   (exwm-ns-register-service)
