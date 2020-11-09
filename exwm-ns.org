@@ -2,6 +2,10 @@
 Simple implementation of Notification interface D-Bus specification
 for the Emacs Window Manager project
 
+* Usage
+To start the notification server, call =(exwm-ns-init)=.  Likewise it can be
+deactivated with =(exwm-ns-deinit)=
+
 * Globals
 
 #+BEGIN_SRC emacs-lisp
