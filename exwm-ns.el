@@ -34,7 +34,7 @@
   `(dbus-register-method :session exwm-ns-dbus-service exwm-ns-dbus-path exwm-ns-dbus-interface ,method ,handler))
 
 (defun exwm-ns-register-service ()
-  (case (dbus-register-service :session exwm-ns-dbus-service)
+  (cl-case (dbus-register-service :session exwm-ns-dbus-service)
     ((:primary-owner :already-owner) (message "D-Bus service org.freedesktop.Notifications registered."))
     (t (message "Could not register D-Bus service org.freedesktop.Notifications."))))
 
